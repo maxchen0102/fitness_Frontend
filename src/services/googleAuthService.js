@@ -1,7 +1,7 @@
 import axios from 'axios';
 import authService from './authService';
 
-const API_URL = 'http://localhost:9999/api/';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:9999/api/';
 
 /**
  * Initiates Google OAuth flow by getting the auth URL from backend
